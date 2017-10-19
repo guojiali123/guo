@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		textarea{
+			width: 250px;
+			height: 100px;
+			border: 1px #333 solid;
+		}
+	</style>
+	<body>
+		<textarea id="lyb"></textarea><br />
+		<button id="btn">提交</button>
+	</body>
+</html>
+<script type="text/javascript">
+		
+	lyb.onblur=function(){
+		if(lyb.value.length>=60){
+			btn.setAttribute("disabled","disabled");
+		}else{
+         alert("成功")
+		}
+	}
+</script>
+
